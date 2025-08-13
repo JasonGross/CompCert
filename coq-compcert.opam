@@ -9,16 +9,16 @@ tags: [
   "keyword:C"
   "keyword:compiler"
   "logpath:compcert"
-  "date:2024-12-13"
+  "date:2024-05-02"
 ]
 homepage: "https://compcert.org/"
 bug-reports: "https://github.com/AbsInt/CompCert/issues"
 depends: [
-  "coq" {>= "8.13.0" & < "8.21~"}
-  "menhir" {>= "20200624" & != "dev"}
+  "coq" {>= "8.12.0" & < "8.21~"}
+  "menhir" {>= "20190626" & != "dev"}
   "ocaml" {>= "4.05.0" & < "5~"}
   "coq-flocq" {>= "4.1.0" & < "5~"}
-  "coq-menhirlib" {>= "20200624"}
+  "coq-menhirlib" {>= "20190626"}
 ]
 build: [
   [
@@ -48,9 +48,7 @@ build: [
 install: [make "install"]
 dev-repo: "git+https://github.com/AbsInt/CompCert.git"
 url {
-  src: "https://github.com/AbsInt/CompCert/archive/v3.15.tar.gz"
-  checksum: [
-    "sha256=6baae8f69bdbf0192d02fae911207cbde73bb1ff6b9790b1e745be0bd9b2342a"
-    "sha512=bde000d0da4ed5ba1c951a0d6677eb3f1386eb446cd85b59758145910bae2d002316396b12fdd0c11f31da8534fffa6a1dc74272ef6d2a96e245a7f44571c2dc"
-  ]
+  src: "https://github.com/AbsInt/CompCert/archive/v3.14.tar.gz"
+  checksum:
+    "sha512=5b3bdba47989f99340fc3e53e76c4994104cb884af123a09e867f5e66a3fc827e5290879a786dbdcda2fa5419210ffc151b5d6e9b4a459e29ca289fd5c12b19a"
 }
